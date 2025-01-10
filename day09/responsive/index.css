@@ -1,0 +1,51 @@
+.box {
+  width: 500px;
+  height: 500px;
+  background-color: pink;
+}
+
+.list {
+  display: flex;
+  gap: 20px;
+}
+
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .burger {
+    display: block;
+  }
+
+  .list {
+    display: none;
+  }
+}
+
+header {
+  height: 80px;
+  border-bottom: 1px solid #efefef;
+}
+
+nav {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+li:hover {
+  font-weight: 700;
+}
+
+/*width 800 이상 일시 메뉴 보이고, 800 이하 일시 메뉴 아이콘*/
